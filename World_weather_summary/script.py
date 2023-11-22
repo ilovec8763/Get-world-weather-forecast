@@ -2,9 +2,16 @@
 # AI Weather by Meteosource
 # https://rapidapi.com/MeteosourceWeather/api/ai-weather-by-meteosource/
 # API name : daily
+import os
 import requests
 from datetime import datetime
 import pandas as pd
+
+basedir = os.getcwd()
+
+X_RapidAPI_Key = "xxxxxxxxxxx Your_RapidAPI_Key xxxxxxxxxxxx"
+X_RapidAPI_Host = "xxxxxxxxxx Your_RapidAPI_Host xxxxxxxxxxxxxxx"
+
 
 print("Pakage were imported...")
 
@@ -23,12 +30,11 @@ querystring = {"lat":lat,"lon":lon,"language":"en","units":"auto"}
 
 qurey_df = pd.DataFrame(querystring, index=[0])
 
-qurey_df.to_csv('C:/Users/asus\Documents/World_weather_summary/qurey_df.csv')
-
+qurey_df.to_csv(os.path.join(basedir,"qurey_df.csv"))
 
 headers = {
-	"X-RapidAPI-Key": "52e62fcc97mshd861568b73fda40p112a1ajsn7e0d8542c825",
-	"X-RapidAPI-Host": "ai-weather-by-meteosource.p.rapidapi.com"
+	"X-RapidAPI-Key": X_RapidAPI_Key,
+	"X-RapidAPI-Host": X_RapidAPI_Host
 }
 
 response = requests.get(url, headers=headers, params=querystring)
@@ -46,4 +52,4 @@ for i in forecast_daily_data:
 df['storm'] = df['storm'].apply(lambda x : x*100.0) 
 df['freeze'] = df['freeze'].apply(lambda x : x*100.0)    
 
-df.to_csv('C:/Users/asus\Documents/World_weather_summary/df.csv')
+df.to_csv(os.path.join(basedir,"df.csv"))
