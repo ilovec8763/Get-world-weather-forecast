@@ -1,6 +1,10 @@
 # Get-world-weather-forecast
 
-撰寫python script 接受經緯座標輸入，並使用AI Weather by Meteosource 的open api服務，向該網站的資料庫請求未來20天的天氣預報，再自動地將結果用power bi做視覺化描述。
+# 功能
+
+輸入經緯座標以獲取全世界的天氣預報。
+
+由python script 接受經緯座標輸入，並使用AI Weather by Meteosource 的open api服務，向該網站的資料庫請求未來20天的天氣預報，再自動地將結果用power bi做視覺化描述。
 
 ![alt text](https://github.com/ilovec8763/Get-world-weather-forecast/blob/main/demo_pic1.png)
 
