@@ -5,7 +5,7 @@
 ![alt text](https://github.com/ilovec8763/Get-world-weather-forecast/blob/main/demo_pic1.png)
 
 # 環境佈署
-1. 安裝完power bi 之後(安裝連結 :https://powerbi.microsoft.com/zh-tw/desktop/)，選定本機安裝好的其中一個python interpreter，並確保安裝以下的package:
+1. 安裝完power bi 之後(安裝連結 :https://powerbi.microsoft.com/zh-tw/desktop/ ) ，選定本機安裝好的其中一個python interpreter，並確保安裝以下的package:
     1. requests
     2. datetime
     3. pandas
