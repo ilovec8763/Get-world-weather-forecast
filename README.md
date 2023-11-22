@@ -1,15 +1,16 @@
 # Get-world-weather-forecast
 
-撰寫python script 接受經緯座標輸入，並使用WeatherAPI.com 的open api服務，向該網站的資料庫請求未來20天的天氣預報，再自動地將結果用power bi做視覺化描述。
+撰寫python script 接受經緯座標輸入，並使用AI Weather by Meteosource 的open api服務，向該網站的資料庫請求未來20天的天氣預報，再自動地將結果用power bi做視覺化描述。
 
 ![alt text](https://github.com/ilovec8763/Get-world-weather-forecast/blob/main/demo_pic1.png)
 
 # 環境佈署
-1. 安裝完power bi 之後(安裝連結 :https://powerbi.microsoft.com/zh-tw/desktop/)，選定本機安裝好的其中一個python interpreter，並確保安裝以下的package:
+1-1. 安裝完power bi 之後(安裝連結 :https://powerbi.microsoft.com/zh-tw/desktop/)，選定本機安裝好的其中一個python interpreter，並確保安裝以下的package:
     1. requests
     2. datetime
     3. pandas
-
+1-2. 到Rapid api 的 AI Weather by Meteosource 頁面 連結 : https://rapidapi.com/MeteosourceWeather/api/ai-weather-by-meteosource/ 
+1-3. 選擇API名稱 GET daily，你可以按照這一篇的教學()，取得X-RapidAPI-Key 和 X-RapidAPI-Host金鑰。
 2. 將World_weather_summary資料夾下載到本機，可以選擇自己喜歡的位置。
 
 3. 打開World_weather_summary資料夾，您會看到一個script.py，在檔案名稱上點擊右鍵，鼠標移到"開啟檔案(H)"上方，在目錄跑出來之後選擇"選擇其他應用程式(C)"。
