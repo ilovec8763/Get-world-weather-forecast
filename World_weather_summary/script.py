@@ -1,9 +1,7 @@
 
-
-
 # AI Weather by Meteosource
 # https://rapidapi.com/MeteosourceWeather/api/ai-weather-by-meteosource/
-# API名稱 daily
+# API name : daily
 import requests
 from datetime import datetime
 import pandas as pd
@@ -26,7 +24,7 @@ querystring = {"lat":lat,"lon":lon,"language":"en","units":"auto"}
 qurey_df = pd.DataFrame(querystring, index=[0])
 
 qurey_df.to_csv('C:/Users/asus\Documents/World_weather_summary/qurey_df.csv')
-#display(qurey_df)
+
 
 headers = {
 	"X-RapidAPI-Key": "52e62fcc97mshd861568b73fda40p112a1ajsn7e0d8542c825",
@@ -34,10 +32,6 @@ headers = {
 }
 
 response = requests.get(url, headers=headers, params=querystring)
-
-#print(response.json()['daily']['data'])
-#print(response.json()['lat'])
-#print(response.json()['lon'])
 
 
 col = ['day','weather','temperature','feels_like','precipitation','storm','freeze','humidity']
@@ -52,7 +46,4 @@ for i in forecast_daily_data:
 df['storm'] = df['storm'].apply(lambda x : x*100.0) 
 df['freeze'] = df['freeze'].apply(lambda x : x*100.0)    
 
-#display(df)
 df.to_csv('C:/Users/asus\Documents/World_weather_summary/df.csv')
-
-#C:/Users/asus\Documents/World_weather_summary/df.csv
