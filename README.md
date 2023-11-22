@@ -16,7 +16,7 @@
     
 2. 到Rapid api 的 AI Weather by Meteosource 頁面 連結 : https://rapidapi.com/MeteosourceWeather/api/ai-weather-by-meteosource/ 
 
-3. 選擇API名稱 GET daily，你可以按照這一篇的教學(https://reurl.cc/9Rk27x )，取得X-RapidAPI-Key 和 X-RapidAPI-Host金鑰。
+3. 選擇API名稱 GET daily 並獲取金鑰。你可以按照這一篇的教學(https://reurl.cc/9Rk27x )，取得X-RapidAPI-Key 和 X-RapidAPI-Host金鑰。
 
 4. 將World_weather_summary資料夾下載到本機，可以選擇自己喜歡的位置。
 
