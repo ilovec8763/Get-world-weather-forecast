@@ -24,6 +24,11 @@
   ![alt text](https://github.com/ilovec8763/Get-world-weather-forecast/blob/main/console_win.png)
 
 7. 按照指示輸入經緯度，執行之後即可完成更新資料的動作。
-8. 點開
 
+8. 點開World_weather_summary.pbix，進入power bi之後，你需要將資料來源指向World_weather_summary資料夾的目錄才能夠正確更新資料。
+    ![alt text](https://github.com/ilovec8763/Get-world-weather-forecast/blob/main/demo_step5.png)
+   
+10. 到 常用>>取得資料>>文字/CSV ，找到World_weather_summary資料夾中csv檔的位置(df.csv和qurey_df.csv)，打開之後，按下"載入"，即可完成dash board和資料源的連接。
+
+11. 如果您往後想要更新資料，直接執行script.py後，再回到power bi 更新頁面即可完成資料更新。
 
